@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Pantalla de inicio -->
+      <div id="inicio">
+        <h1>🎉 Bienvenido al Trivia 🎉</h1>
+
+        <label for="nombre">Ingresa tu nombre:</label>
+        <input type="text" id="nombre" placeholder="Tu nombre" />
+
+        <label for="preguntas">Número de preguntas (5 a 30):</label>
+        <input type="number" id="preguntas" min="5" max="30" value="10" />
+
+        <button id="comenzar">Comenzar Juego</button>
+      </div>
+
+      <!-- Pantalla de juego -->
+      <div id="juego" style="display: none">
+        <p id="question">Pregunta aparecerá aquí</p>
+        <div id="answers"></div>
+        <div id="status">
+          <p id="score">Puntaje: 0</p>
+          <button id="next-btn" disabled>Siguiente Pregunta</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Archivos JS -->
+    <script src="preguntas.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+</div>
